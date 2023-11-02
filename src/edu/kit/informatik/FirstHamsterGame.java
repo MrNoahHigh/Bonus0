@@ -44,6 +44,37 @@ public class FirstHamsterGame extends InspectableSimpleHamsterGame {
     @Override
     public void run() {
         // Exercise: use commands like move() or pickGrain() to collect all grains
+        paule.pickGrain();
+        moveTwo();
+        moveTwo();
+        paule.pickGrain();
+        paule.turnLeft();
+        paule.move();
+        paule.move();
+        paule.pickGrain();
+        paule.turnLeft();
+        paule.move();
+        paule.pickGrain();
+        paule.move();
+        moveTwo();
+        paule.pickGrain();
+        turnRight();
+        moveTwo();
+        paule.pickGrain();
+        paule.pickGrain();
+        paule.turnLeft();
+        paule.turnLeft();
+        paule.move();
+        paule.turnLeft();
+        paule.move();
+        moveTwo();
+        paule.turnLeft();
+        moveTwo();
+        turnRight();
+        moveTwo();
+        while (!paule.mouthEmpty()) {
+            paule.putGrain();
+        }
 
     }
 
@@ -51,7 +82,15 @@ public class FirstHamsterGame extends InspectableSimpleHamsterGame {
      * Exercise for students with prior knowledge in programming:
      * Implement the method turnRight, that lets Paule turn right.
      */
+
+    private void moveTwo() {
+        paule.move();
+        paule.move();
+    }
+
     private void turnRight() {
-        
+        paule.turnLeft();
+        paule.turnLeft();
+        paule.turnLeft();
     }
 }
